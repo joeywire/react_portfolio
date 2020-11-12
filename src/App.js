@@ -1,10 +1,10 @@
-
-import './App.css';
+import AboutUs from './pages/AboutUs';
 
 function App() {
   return (
     <div className="App">
-      <h1>Portfolio React App</h1>
+      <h1>Film</h1>
+      <AboutUs />
     </div>
   );
 }
