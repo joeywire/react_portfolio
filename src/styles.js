@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 //Layout Styling (mostly)
 
-export const Layout = styled.div`
+export const Layout  = styled.div`
     min-height: 90vh;
     display: flex; 
     align-items: center;
