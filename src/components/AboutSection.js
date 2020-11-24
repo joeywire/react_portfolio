@@ -1,24 +1,39 @@
-import styled from 'styled-components';
 
 import { Layout, Description, Image, Hide } from '../styles';
 import home1 from '../img/home1.png'
-
+//Framer Motion 
+import { motion } from 'framer-motion'; 
 
 const AboutSection = () => {
+
+    //Framer Motion Variant - Avoid the cess pool of props 
+
+    
     return (
         <Layout >
             <Description>
-                <div className="title"s>
+                <motion.div>
                     <Hide>
-                        <h2>We work to make</h2>
+                        {/* 
+                            Framer Motion Notes: Once this is polished lets move these notes elsewhere
+
+                            effect takes effect the moment the component renders 
+                            animate is a live property - so you can update it live with someting like state and a user input
+                            Basic logic - add initial and use property to manipulate that 
+                            With variatn you pass it in as a variable (see where it is defined above) 
+                                - then pass down value for inital and animate as strings (keys we're referencing)
+                        */}
+                        <motion.h2>We work to make</motion.h2>
                     </Hide>
                     <Hide>
-                        <h2>your <span>dreams</span> come</h2>
+                        <motion.h2>
+                            your <span>dreams</span> come
+                        </motion.h2>
                     </Hide>
                     <Hide>
-                        <h2>true.</h2>
+                        <motion.h2>true.</motion.h2>
                     </Hide>
-                </div>
+                </motion.div>
                 <p>Contact us for any web development ideas you have - lets taco bout it!</p>
                 <button>Contact Us</button>
             </Description>
