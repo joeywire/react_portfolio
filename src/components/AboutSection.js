@@ -3,6 +3,7 @@ import home1 from '../img/home1.png';
 //Framer Motion
 import { motion } from 'framer-motion';
 import { titleAnim, fade, photoAnim } from '../animation';
+import Wave from './Wave';
 
 const AboutSection = () => {
   //Framer Motion Variant - Avoid the cess pool of props
@@ -40,6 +41,7 @@ const AboutSection = () => {
       <Image>
         <motion.img variants={photoAnim} src={home1} alt="Guy with camera" />
       </Image>
+      <Wave />
     </Layout>
   );
 };
